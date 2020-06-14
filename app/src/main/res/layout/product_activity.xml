@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/loadingProductPanel"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+        <ImageView
+            android:id="@+id/product_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="TODO"
+            android:paddingLeft="5dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_image_view"
+            android:background="@color/myColor"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"
+            tools:text="Product Name" />
+
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name"
+            android:layout_marginStart="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            tools:text="Product Description sssssssssssss sda da asdad asd asda dada asdd asd adadas asd asd asd adasda asasd dad asd asda dada asdd asd adadas asd asd asd adasda asasd" />
+
+        <TextView
+            android:id="@+id/product_average_price_title"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_description"
+            android:paddingLeft="5dp"
+            android:text="@string/average_price_title"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_average_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_description"
+            android:layout_alignLeft="@id/product_create_time"
+            android:layout_toRightOf="@id/product_average_price_title"
+            android:textSize="12sp"
+            tools:text="40000.00" />
+
+
+        <TextView
+            android:id="@+id/product_rating_title"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_description"
+            android:layout_alignLeft="@id/product_last_modify_time_title"
+            android:layout_toRightOf="@id/product_average_price"
+            android:text="@string/rating_title"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_description"
+            android:layout_alignLeft="@id/product_last_modify_time"
+            android:layout_toRightOf="@id/product_rating_title"
+            android:textSize="12sp"
+            tools:text="4.5" />
+
+
+        <TextView
+            android:id="@+id/product_create_time_title"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_rating"
+            android:paddingLeft="5dp"
+            android:text="@string/create_time_title"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_rating_title"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/product_create_time_title"
+            android:textSize="12sp"
+            tools:text="2019-10-15 17:38:32" />
+
+
+        <TextView
+            android:id="@+id/product_last_modify_time_title"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_rating_title"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/product_create_time"
+            android:text="@string/last_modify_time_title"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_last_modify_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_rating_title"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/product_last_modify_time_title"
+            android:textSize="12sp"
+            tools:text="2019-10-15 17:38:32" />
+
+
+        <TextView
+            android:id="@+id/product_create_by_title"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_create_time_title"
+            android:paddingLeft="5dp"
+            android:text="@string/create_by_title"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_create_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_create_time_title"
+            android:layout_alignLeft="@id/product_create_time"
+            android:layout_toRightOf="@id/product_create_by_title"
+            android:textSize="12sp"
+            tools:text="west223" />
+
+
+        <TextView
+            android:id="@+id/product_last_modified_by_title"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_create_time_title"
+            android:layout_alignLeft="@id/product_last_modify_time_title"
+            android:layout_toRightOf="@id/product_create_by"
+            android:text="@string/last_modified_by_title"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/product_last_modified_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_create_time_title"
+            android:layout_alignLeft="@id/product_last_modify_time"
+            android:layout_toRightOf="@id/product_last_modified_by_title"
+            android:textSize="12sp"
+            tools:text="west223" />
+
+        <TextView
+            android:id="@+id/product_reviews_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_last_modified_by_title"
+            android:layout_marginTop="10dp"
+            android:background="@color/myColor"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/product_reviews_title"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reviews_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_reviews_title"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+

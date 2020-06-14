@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Product Assistant</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Product Assistant</string>
+    <string name="nav_header_subtitle">Контакт: semen040594@yandex.ru</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="name_title">Наименование:</string>
+    <string name="description_title">Описание: </string>
+    <string name="average_price_title">Цена: </string>
+    <string name="rating_title">Рейтинг: </string>
+    <string name="create_time_title">Создано: </string>
+    <string name="last_modify_time_title">Обновлено: </string>
+    <string name="create_by_title">Создал: </string>
+    <string name="last_modified_by_title">Обновил: </string>
+    <string name="reviewer_name">Рецензент:</string>
+    <string name="review_post_time">Опубликовано:</string>
+    <string name="review_system_title">Система:</string>
+    <string name="review_pluses_title">Плюсы:</string>
+    <string name="review_minuses_title">Минусы:</string>
+    <string name="review_link_title">Ссылка:</string>
+    <string name="product_reviews_title">Отзывы:</string>
+</resources>
